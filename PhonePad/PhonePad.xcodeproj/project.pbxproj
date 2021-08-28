@@ -15,6 +15,7 @@
 		7DF3570A26DABB3400E51A03 /* PhonePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3570926DABB3400E51A03 /* PhonePadUITests.swift */; };
 		7DF3571926DAEF8900E51A03 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3571726DAEF8900E51A03 /* RootViewController.swift */; };
 		7DF3571A26DAEF8900E51A03 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF3571826DAEF8900E51A03 /* RootViewController.xib */; };
+		7DF3571C26DAF44800E51A03 /* LetterCombinationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7DF3570B26DABB3400E51A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DF3571726DAEF8900E51A03 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		7DF3571826DAEF8900E51A03 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinationsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				7DF356FE26DABB3400E51A03 /* PhonePadTests.swift */,
+				7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */,
 				7DF3570026DABB3400E51A03 /* Info.plist */,
 			);
 			path = PhonePadTests;
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF356FF26DABB3400E51A03 /* PhonePadTests.swift in Sources */,
+				7DF3571C26DAF44800E51A03 /* LetterCombinationsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
