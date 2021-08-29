@@ -34,13 +34,12 @@ public class LetterCombinations {
         // find candidates
         let letters = getLettersFor(phonePadNumber: numbers[nextIndex])
         
-        // 0 and 1 validation
         if letters.count == 0 {
             recursiveWordList(numbers: numbers, buffer: buffer, nextIndex: nextIndex + 1, wordsList: &wordsList)
         }
         
         // place candidates in buffer
-        for letter in letters {
+        letters.forEach { letter in
             let newBuffer = buffer + String(letter)
             // recurse to next index
             recursiveWordList(numbers: numbers, buffer: newBuffer, nextIndex: nextIndex + 1, wordsList: &wordsList)
