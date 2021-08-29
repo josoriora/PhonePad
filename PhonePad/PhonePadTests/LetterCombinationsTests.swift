@@ -33,6 +33,13 @@ class LetterCombinationsTests: XCTestCase {
         XCTAssertEqual(letterCombinations.wordListFrom(numbers: [9]), ["w", "x", "y"])
     }
     
+    func testDifferentNumbersInput() {
+        let letterCombinations = LetterCombinations()
+        
+        XCTAssertEqual(letterCombinations.wordListFrom(numbers: [-5, 10, 100]), [String]())
+        XCTAssertEqual(letterCombinations.wordListFrom(numbers: [-5, 10, 2, 100]), ["a", "b", "c"])
+    }
+    
     func testTwoDigitInput() {
         let letterCombinations = LetterCombinations()
         

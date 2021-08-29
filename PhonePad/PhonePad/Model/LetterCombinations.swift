@@ -32,7 +32,7 @@ public class LetterCombinations {
         }
         
         // find candidates
-        let letters = numberMapping[numbers[nextIndex]]
+        let letters = getLettersFor(phonePadNumber: numbers[nextIndex])
         
         // 0 and 1 validation
         if letters.count == 0 {
@@ -45,5 +45,11 @@ public class LetterCombinations {
             // recurse to next index
             recursiveWordList(numbers: numbers, buffer: newBuffer, nextIndex: nextIndex + 1, wordsList: &wordsList)
         }
+    }
+    
+    private func getLettersFor(phonePadNumber: Int) -> String {
+        guard phonePadNumber > 1 && phonePadNumber <= 9 else { return "" }
+        
+        return numberMapping[phonePadNumber]
     }
 }
