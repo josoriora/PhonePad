@@ -16,6 +16,9 @@
 		7DF3571A26DAEF8900E51A03 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF3571826DAEF8900E51A03 /* RootViewController.xib */; };
 		7DF3571C26DAF44800E51A03 /* LetterCombinationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */; };
 		7DF3571F26DB4B6A00E51A03 /* LetterCombinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3571E26DB4B6A00E51A03 /* LetterCombinations.swift */; };
+		7DF3572126DB4E1F00E51A03 /* PhoneNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572026DB4E1F00E51A03 /* PhoneNumberTests.swift */; };
+		7DF3572326DB540600E51A03 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572226DB540600E51A03 /* PhoneNumber.swift */; };
+		7DF3572526DB543700E51A03 /* PhoneNumberImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572426DB543700E51A03 /* PhoneNumberImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		7DF3571826DAEF8900E51A03 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinationsTests.swift; sourceTree = "<group>"; };
 		7DF3571E26DB4B6A00E51A03 /* LetterCombinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinations.swift; sourceTree = "<group>"; };
+		7DF3572026DB4E1F00E51A03 /* PhoneNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTests.swift; sourceTree = "<group>"; };
+		7DF3572226DB540600E51A03 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		7DF3572426DB543700E51A03 /* PhoneNumberImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */,
+				7DF3572026DB4E1F00E51A03 /* PhoneNumberTests.swift */,
 				7DF3570026DABB3400E51A03 /* Info.plist */,
 			);
 			path = PhonePadTests;
@@ -135,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				7DF3571E26DB4B6A00E51A03 /* LetterCombinations.swift */,
+				7DF3572226DB540600E51A03 /* PhoneNumber.swift */,
+				7DF3572426DB543700E51A03 /* PhoneNumberImpl.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +281,8 @@
 				7DF356E826DABB3100E51A03 /* AppDelegate.swift in Sources */,
 				7DF3571F26DB4B6A00E51A03 /* LetterCombinations.swift in Sources */,
 				7DF356EA26DABB3100E51A03 /* SceneDelegate.swift in Sources */,
+				7DF3572526DB543700E51A03 /* PhoneNumberImpl.swift in Sources */,
+				7DF3572326DB540600E51A03 /* PhoneNumber.swift in Sources */,
 				7DF3571926DAEF8900E51A03 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF3571C26DAF44800E51A03 /* LetterCombinationsTests.swift in Sources */,
+				7DF3572126DB4E1F00E51A03 /* PhoneNumberTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
