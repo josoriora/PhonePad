@@ -18,6 +18,8 @@
 		7DF3572126DB4E1F00E51A03 /* PhoneNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572026DB4E1F00E51A03 /* PhoneNumberTests.swift */; };
 		7DF3572326DB540600E51A03 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572226DB540600E51A03 /* PhoneNumber.swift */; };
 		7DF3572526DB543700E51A03 /* PhoneNumberImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572426DB543700E51A03 /* PhoneNumberImpl.swift */; };
+		7DF3572A26DC0A7200E51A03 /* PhoneNumberDialListFacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572926DC0A7200E51A03 /* PhoneNumberDialListFacadeTests.swift */; };
+		7DF3572C26DC0DF800E51A03 /* PhoneNumberDialListFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572B26DC0DF800E51A03 /* PhoneNumberDialListFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		7DF3572026DB4E1F00E51A03 /* PhoneNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTests.swift; sourceTree = "<group>"; };
 		7DF3572226DB540600E51A03 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		7DF3572426DB543700E51A03 /* PhoneNumberImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberImpl.swift; sourceTree = "<group>"; };
+		7DF3572926DC0A7200E51A03 /* PhoneNumberDialListFacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberDialListFacadeTests.swift; sourceTree = "<group>"; };
+		7DF3572B26DC0DF800E51A03 /* PhoneNumberDialListFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberDialListFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 			children = (
 				7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */,
 				7DF3572026DB4E1F00E51A03 /* PhoneNumberTests.swift */,
+				7DF3572926DC0A7200E51A03 /* PhoneNumberDialListFacadeTests.swift */,
 				7DF3570026DABB3400E51A03 /* Info.plist */,
 			);
 			path = PhonePadTests;
@@ -115,6 +120,7 @@
 				7DF3571E26DB4B6A00E51A03 /* LetterCombinations.swift */,
 				7DF3572226DB540600E51A03 /* PhoneNumber.swift */,
 				7DF3572426DB543700E51A03 /* PhoneNumberImpl.swift */,
+				7DF3572B26DC0DF800E51A03 /* PhoneNumberDialListFacade.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 				7DF3571F26DB4B6A00E51A03 /* LetterCombinations.swift in Sources */,
 				7DF356EA26DABB3100E51A03 /* SceneDelegate.swift in Sources */,
 				7DF3572526DB543700E51A03 /* PhoneNumberImpl.swift in Sources */,
+				7DF3572C26DC0DF800E51A03 /* PhoneNumberDialListFacade.swift in Sources */,
 				7DF3572326DB540600E51A03 /* PhoneNumber.swift in Sources */,
 				7DF3571926DAEF8900E51A03 /* RootViewController.swift in Sources */,
 			);
@@ -234,6 +241,7 @@
 			files = (
 				7DF3571C26DAF44800E51A03 /* LetterCombinationsTests.swift in Sources */,
 				7DF3572126DB4E1F00E51A03 /* PhoneNumberTests.swift in Sources */,
+				7DF3572A26DC0A7200E51A03 /* PhoneNumberDialListFacadeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
