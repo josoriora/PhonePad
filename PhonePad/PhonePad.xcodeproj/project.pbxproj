@@ -11,7 +11,6 @@
 		7DF356EA26DABB3100E51A03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF356E926DABB3100E51A03 /* SceneDelegate.swift */; };
 		7DF356F126DABB3400E51A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF356F026DABB3400E51A03 /* Assets.xcassets */; };
 		7DF356F426DABB3400E51A03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DF356F226DABB3400E51A03 /* LaunchScreen.storyboard */; };
-		7DF3570A26DABB3400E51A03 /* PhonePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3570926DABB3400E51A03 /* PhonePadUITests.swift */; };
 		7DF3571926DAEF8900E51A03 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3571726DAEF8900E51A03 /* RootViewController.swift */; };
 		7DF3571A26DAEF8900E51A03 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF3571826DAEF8900E51A03 /* RootViewController.xib */; };
 		7DF3571C26DAF44800E51A03 /* LetterCombinationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */; };
@@ -29,13 +28,6 @@
 			remoteGlobalIDString = 7DF356E326DABB3100E51A03;
 			remoteInfo = PhonePad;
 		};
-		7DF3570626DABB3400E51A03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7DF356DC26DABB3100E51A03 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7DF356E326DABB3100E51A03;
-			remoteInfo = PhonePad;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +39,6 @@
 		7DF356F526DABB3400E51A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DF356FA26DABB3400E51A03 /* PhonePadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonePadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF3570026DABB3400E51A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DF3570526DABB3400E51A03 /* PhonePadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonePadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DF3570926DABB3400E51A03 /* PhonePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePadUITests.swift; sourceTree = "<group>"; };
-		7DF3570B26DABB3400E51A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DF3571726DAEF8900E51A03 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		7DF3571826DAEF8900E51A03 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinationsTests.swift; sourceTree = "<group>"; };
@@ -74,13 +63,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DF3570226DABB3400E51A03 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,7 +71,6 @@
 			children = (
 				7DF356E626DABB3100E51A03 /* PhonePad */,
 				7DF356FD26DABB3400E51A03 /* PhonePadTests */,
-				7DF3570826DABB3400E51A03 /* PhonePadUITests */,
 				7DF356E526DABB3100E51A03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +80,6 @@
 			children = (
 				7DF356E426DABB3100E51A03 /* PhonePad.app */,
 				7DF356FA26DABB3400E51A03 /* PhonePadTests.xctest */,
-				7DF3570526DABB3400E51A03 /* PhonePadUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,15 +107,6 @@
 				7DF3570026DABB3400E51A03 /* Info.plist */,
 			);
 			path = PhonePadTests;
-			sourceTree = "<group>";
-		};
-		7DF3570826DABB3400E51A03 /* PhonePadUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7DF3570926DABB3400E51A03 /* PhonePadUITests.swift */,
-				7DF3570B26DABB3400E51A03 /* Info.plist */,
-			);
-			path = PhonePadUITests;
 			sourceTree = "<group>";
 		};
 		7DF3571D26DB4B4800E51A03 /* Model */ = {
@@ -186,24 +157,6 @@
 			productReference = 7DF356FA26DABB3400E51A03 /* PhonePadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7DF3570426DABB3400E51A03 /* PhonePadUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7DF3571426DABB3400E51A03 /* Build configuration list for PBXNativeTarget "PhonePadUITests" */;
-			buildPhases = (
-				7DF3570126DABB3400E51A03 /* Sources */,
-				7DF3570226DABB3400E51A03 /* Frameworks */,
-				7DF3570326DABB3400E51A03 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DF3570726DABB3400E51A03 /* PBXTargetDependency */,
-			);
-			name = PhonePadUITests;
-			productName = PhonePadUITests;
-			productReference = 7DF3570526DABB3400E51A03 /* PhonePadUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,10 +170,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					7DF356F926DABB3400E51A03 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 7DF356E326DABB3100E51A03;
-					};
-					7DF3570426DABB3400E51A03 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 7DF356E326DABB3100E51A03;
 					};
@@ -241,7 +190,6 @@
 			targets = (
 				7DF356E326DABB3100E51A03 /* PhonePad */,
 				7DF356F926DABB3400E51A03 /* PhonePadTests */,
-				7DF3570426DABB3400E51A03 /* PhonePadUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,13 +206,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7DF356F826DABB3400E51A03 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DF3570326DABB3400E51A03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,14 +237,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DF3570126DABB3400E51A03 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DF3570A26DABB3400E51A03 /* PhonePadUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -311,11 +244,6 @@
 			isa = PBXTargetDependency;
 			target = 7DF356E326DABB3100E51A03 /* PhonePad */;
 			targetProxy = 7DF356FB26DABB3400E51A03 /* PBXContainerItemProxy */;
-		};
-		7DF3570726DABB3400E51A03 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7DF356E326DABB3100E51A03 /* PhonePad */;
-			targetProxy = 7DF3570626DABB3400E51A03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -525,44 +453,6 @@
 			};
 			name = Release;
 		};
-		7DF3571526DABB3400E51A03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PhonePadUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.julian.PhonePadUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PhonePad;
-			};
-			name = Debug;
-		};
-		7DF3571626DABB3400E51A03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PhonePadUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.julian.PhonePadUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PhonePad;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,15 +479,6 @@
 			buildConfigurations = (
 				7DF3571226DABB3400E51A03 /* Debug */,
 				7DF3571326DABB3400E51A03 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7DF3571426DABB3400E51A03 /* Build configuration list for PBXNativeTarget "PhonePadUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DF3571526DABB3400E51A03 /* Debug */,
-				7DF3571626DABB3400E51A03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
