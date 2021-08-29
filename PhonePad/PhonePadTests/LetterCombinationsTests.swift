@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import PhonePad
 
 class LetterCombinationsTests: XCTestCase {
 
@@ -54,42 +55,5 @@ class LetterCombinationsTests: XCTestCase {
         XCTAssertEqual(letterCombinations.wordListFrom(numbers: [5, 7, 9]), ["jpw", "jpx", "jpy", "jrw", "jrx", "jry", "jsw", "jsx", "jsy",
                                                                              "kpw", "kpx", "kpy", "krw", "krx", "kry", "ksw", "ksx", "ksy",
                                                                              "lpw", "lpx", "lpy", "lrw", "lrx", "lry", "lsw", "lsx", "lsy"])
-    }
-}
-
-class LetterCombinations {
-    
-    let numberMapping = ["", "", "abc", "def", "ghi", "jkl", "mno", "prs", "tuv", "wxy"]
-    
-    func wordListFrom(numbers: [Int]) -> [String] {
-        var wordsList = [String]()
-        recursiveWordList(numbers: numbers, buffer: "", nextIndex: 0, wordsList: &wordsList)
-        
-        return wordsList
-    }
-        
-    private func recursiveWordList(numbers: [Int], buffer: String, nextIndex: Int, wordsList: inout [String]) {
-        // Termination case
-        if nextIndex >= numbers.count {
-            if buffer.count > 0 {
-                wordsList.append(String(buffer))
-            }
-            return
-        }
-        
-        // find candidates
-        let letters = numberMapping[numbers[nextIndex]]
-        
-        // 0 and 1 validation
-        if letters.count == 0 {
-            recursiveWordList(numbers: numbers, buffer: buffer, nextIndex: nextIndex + 1, wordsList: &wordsList)
-        }
-        
-        // place candidates in buffer
-        for letter in letters {
-            let newBuffer = buffer + String(letter)
-            // recurse to next index
-            recursiveWordList(numbers: numbers, buffer: newBuffer, nextIndex: nextIndex + 1, wordsList: &wordsList)
-        }
     }
 }
