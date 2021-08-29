@@ -129,8 +129,16 @@
 			children = (
 				7DF3571726DAEF8900E51A03 /* RootViewController.swift */,
 				7DF3571826DAEF8900E51A03 /* RootViewController.xib */,
+				7DF3572E26DC27AB00E51A03 /* RotaryDial */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7DF3572E26DC27AB00E51A03 /* RotaryDial */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RotaryDial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

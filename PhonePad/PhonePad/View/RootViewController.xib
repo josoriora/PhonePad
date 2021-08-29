@@ -17,14 +17,53 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pdv-PL-Swu">
+                    <rect key="frame" x="0.0" y="149.5" width="414" height="628"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QuY-P7-pkB">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQf-VB-oFV">
+                    <rect key="frame" x="20" y="797" width="374" height="66"/>
+                    <state key="normal" title="Print Words"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53O-3m-kya">
+                    <rect key="frame" x="20" y="64" width="374" height="65.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemGreenColor"/>
-            <point key="canvasLocation" x="133" y="87"/>
+            <color key="backgroundColor" systemColor="systemGray2Color"/>
+            <constraints>
+                <constraint firstItem="pdv-PL-Swu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="15A-o1-FXo"/>
+                <constraint firstItem="53O-3m-kya" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="8ua-YP-Qkf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kQf-VB-oFV" secondAttribute="trailing" constant="20" id="MVd-Or-AjF"/>
+                <constraint firstItem="kQf-VB-oFV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Oi8-nF-3Yw"/>
+                <constraint firstItem="53O-3m-kya" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="SN3-TX-tMt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pdv-PL-Swu" secondAttribute="trailing" id="SX7-O3-3bd"/>
+                <constraint firstItem="53O-3m-kya" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.08" id="VmR-9B-7OF"/>
+                <constraint firstItem="pdv-PL-Swu" firstAttribute="top" secondItem="53O-3m-kya" secondAttribute="bottom" constant="20" id="cl1-ij-xGX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="53O-3m-kya" secondAttribute="trailing" constant="20" id="myf-f2-0YM"/>
+                <constraint firstItem="pdv-PL-Swu" firstAttribute="bottom" secondItem="kQf-VB-oFV" secondAttribute="top" constant="-20" id="oql-MV-k73"/>
+                <constraint firstItem="kQf-VB-oFV" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.08" id="px2-r2-unz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kQf-VB-oFV" secondAttribute="bottom" constant="-1" id="uTY-mk-Eg3"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="86.383928571428569"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
