@@ -37,6 +37,24 @@ class LetterCombinationsTests: XCTestCase {
         
         XCTAssertEqual(letterCombinations.wordListFrom(numbers: [2, 4]), ["ag", "ah", "ai", "bg", "bh", "bi", "cg", "ch", "ci"])
     }
+    
+    func testOnesAndZeros() {
+        let letterCombinations = LetterCombinations()
+        
+        XCTAssertEqual(letterCombinations.wordListFrom(numbers: [0, 0, 0, 0]), [String]())
+        XCTAssertEqual(letterCombinations.wordListFrom(numbers: [1, 1, 1, 1, 1]), [String]())
+        XCTAssertEqual(letterCombinations.wordListFrom(numbers: [0, 1, 0, 2, 1]), ["a", "b", "c"])
+        XCTAssertEqual(letterCombinations.wordListFrom(numbers: [0, 1, 2, 4, 0]), ["ag", "ah", "ai", "bg", "bh", "bi", "cg", "ch", "ci"])
+        XCTAssertEqual(letterCombinations.wordListFrom(numbers: [0, 1, 2, 0, 4, 0]), ["ag", "ah", "ai", "bg", "bh", "bi", "cg", "ch", "ci"])
+    }
+    
+    func testThreeDigitsInput() {
+        let letterCombinations = LetterCombinations()
+        
+        XCTAssertEqual(letterCombinations.wordListFrom(numbers: [5, 7, 9]), ["jpw", "jpx", "jpy", "jrw", "jrx", "jry", "jsw", "jsx", "jsy",
+                                                                             "kpw", "kpx", "kpy", "krw", "krx", "kry", "ksw", "ksx", "ksy",
+                                                                             "lpw", "lpx", "lpy", "lrw", "lrx", "lry", "lsw", "lsx", "lsy"])
+    }
 }
 
 class LetterCombinations {
