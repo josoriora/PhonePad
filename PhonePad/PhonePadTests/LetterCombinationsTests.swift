@@ -31,17 +31,47 @@ class LetterCombinationsTests: XCTestCase {
         XCTAssertEqual(letterCombinations.wordListFrom(numbers: [8]), ["t", "u", "v"])
         XCTAssertEqual(letterCombinations.wordListFrom(numbers: [9]), ["w", "x", "y"])
     }
+    
+    func testTwoDigitInput() {
+        let letterCombinations = LetterCombinations()
+        
+        XCTAssertEqual(letterCombinations.wordListFrom(numbers: [2, 4]), ["ag", "ah", "ai", "bg", "bh", "bi", "cg", "ch", "ci"])
+    }
 }
 
 class LetterCombinations {
     
-    let letterMapping = ["0", "1", "abc", "def", "ghi", "jkl", "mno", "prs", "tuv", "wxy"]
+    let numberMapping = ["", "", "abc", "def", "ghi", "jkl", "mno", "prs", "tuv", "wxy"]
     
     func wordListFrom(numbers: [Int]) -> [String] {
-        guard let number = numbers.first, number > 1, number <= 9 else {
-            return [String]()
+        var wordsList = [String]()
+        recursiveWordList(numbers: numbers, buffer: "", nextIndex: 0, wordsList: &wordsList)
+        
+        return wordsList
+    }
+        
+    private func recursiveWordList(numbers: [Int], buffer: String, nextIndex: Int, wordsList: inout [String]) {
+        // Termination case
+        if nextIndex >= numbers.count {
+            if buffer.count > 0 {
+                wordsList.append(String(buffer))
+            }
+            return
         }
         
-        return letterMapping[numbers.first!].map { String($0) }
+        // find candidates
+        let letters = numberMapping[numbers[nextIndex]]
+        
+        // 0 and 1 validation
+        if letters.count == 0 {
+            recursiveWordList(numbers: numbers, buffer: buffer, nextIndex: nextIndex + 1, wordsList: &wordsList)
+        }
+        
+        // place candidates in buffer
+        for letter in letters {
+            let newBuffer = buffer + String(letter)
+            // recurse to next index
+            recursiveWordList(numbers: numbers, buffer: newBuffer, nextIndex: nextIndex + 1, wordsList: &wordsList)
+        }
     }
 }
