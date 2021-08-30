@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="PhonePad" customModuleProvider="target">
             <connections>
+                <outlet property="numbersLabel" destination="53O-3m-kya" id="BJf-EN-DXA"/>
                 <outlet property="rotaryDialView" destination="8QR-cc-qnn" id="9O8-zi-Ptz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,6 +23,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQf-VB-oFV">
                     <rect key="frame" x="20" y="797.5" width="374" height="65.5"/>
                     <state key="normal" title="Print Words"/>
+                    <connections>
+                        <action selector="onPrintWords:" destination="-1" eventType="touchUpInside" id="Vni-WQ-XXe"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53O-3m-kya">
                     <rect key="frame" x="20" y="64" width="374" height="65.5"/>

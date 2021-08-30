@@ -9,8 +9,9 @@ import UIKit
 
 class RootViewController: UIViewController {
 
+    @IBOutlet weak var numbersLabel: UILabel!
     @IBOutlet weak var rotaryDialView: RotaryDialView!
-    var phoneNumbers: [PhoneNumber] = PhoneNumberDialListFacade.getList()
+    let viewModel = RotaryDialViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,20 +19,26 @@ class RootViewController: UIViewController {
         rotaryDialView.dataSource = self
         rotaryDialView.delegate = self
     }
+    
+    @IBAction func onPrintWords(_ sender: Any) {
+    }
 }
 
 extension RootViewController: RotaryDialDataSource {
     func numberOfDials() -> Int {
-        return phoneNumbers.count
+        return viewModel.dialList.count
     }
     
     func numberAt(indexPath: IndexPath) -> PhoneNumber? {
-        return phoneNumbers[indexPath.row]
+        return viewModel.dialList[indexPath.row]
     }
 }
 
 extension RootViewController: RotaryDialDelegate {
     func didSelectDialAt(indexPath: IndexPath) {
+        let phoneNumber = viewModel.dialList[indexPath.row]
         
+        viewModel.append(number: phoneNumber.number)
+        self.numbersLabel.text = viewModel.numbersText
     }
 }
