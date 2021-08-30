@@ -45,7 +45,7 @@ class RotaryDialView: UIView {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.backgroundColor = UIColor.yellow
+        collectionView.backgroundColor = UIColor.gray
         collectionView.register(CircleCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
         
         self.addSubview(collectionView)
@@ -72,14 +72,15 @@ extension RotaryDialView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard
-            let phoneNumber = self.dataSource?.numberAt(indexPath: indexPath),
+            let keypad = self.dataSource?.numberAt(indexPath: indexPath),
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? CircleCollectionViewCell
         else {
             return UICollectionViewCell()
         }
         
-        cell.backgroundView?.backgroundColor = .blue
-        cell.titleLabel.text = String(phoneNumber.number)
+        cell.backgroundView?.backgroundColor = .darkGray
+        cell.titleLabel.text = String(keypad.number)
+        cell.subtitleLabel.text = keypad.letters
         return cell
     }
 }

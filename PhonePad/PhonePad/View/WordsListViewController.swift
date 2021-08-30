@@ -15,7 +15,7 @@ class WordsListViewController: UIViewController {
     
     init(words: [String]) {
         self.words = words
-        self.text = words.reduce("", {$0 + ", " + $1})
+        self.text = words.reduce("", {$0 + $1 + ", "})
         super.init(nibName: "WordsListViewController", bundle: nil)
     }
     
@@ -28,16 +28,4 @@ class WordsListViewController: UIViewController {
         self.navigationItem.title = "Words list"
         self.textView.text = text
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
