@@ -52,27 +52,6 @@ class RotaryDialViewModelTests: XCTestCase {
     }
 }
 
-class RotaryDialViewModel {
-    let numberList: PhoneNumberDialList.Type
-    let letterCombinations: LetterCombinationsProtocol
-    let dialList: [PhoneNumber]
-    private(set) var numbers = [Int]()
-    var numbersText: String {
-        numbers.reduce("") { $0 + String($1) }
-    }
-    
-    init(numberList: PhoneNumberDialList.Type = PhoneNumberDialListFacade.self,
-         letterCombinations: LetterCombinationsProtocol = LetterCombinations()) {
-        self.numberList = numberList
-        self.letterCombinations = letterCombinations
-        self.dialList = numberList.getList()
-    }
-    
-    func append(number: Int) {
-        self.numbers.append(number)
-    }
-}
-
 class PhoneNumberDialListMock: PhoneNumberDialList {
     static func getList() -> [PhoneNumber] {
         return [PhoneNumberImpl(number: 2, letters: "abc")]
