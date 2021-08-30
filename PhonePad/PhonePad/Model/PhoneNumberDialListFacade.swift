@@ -7,7 +7,11 @@
 
 import Foundation
 
-public class PhoneNumberDialListFacade {
+public protocol PhoneNumberDialList {
+    static func getList() -> [PhoneNumber]
+}
+
+public class PhoneNumberDialListFacade: PhoneNumberDialList {
     public static func getList() -> [PhoneNumber] {
         var dialList = [PhoneNumber]()
         
