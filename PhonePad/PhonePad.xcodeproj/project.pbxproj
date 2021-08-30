@@ -24,6 +24,7 @@
 		7DF3573226DC303900E51A03 /* CoreGraphicsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573126DC303900E51A03 /* CoreGraphicsExtensions.swift */; };
 		7DF3573426DC460000E51A03 /* CircleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573326DC460000E51A03 /* CircleCollectionViewCell.swift */; };
 		7DF3573626DC462600E51A03 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573526DC462600E51A03 /* Circle.swift */; };
+		7DF3573A26DC534F00E51A03 /* RotaryDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573926DC534F00E51A03 /* RotaryDialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		7DF3573126DC303900E51A03 /* CoreGraphicsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtensions.swift; sourceTree = "<group>"; };
 		7DF3573326DC460000E51A03 /* CircleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCollectionViewCell.swift; sourceTree = "<group>"; };
 		7DF3573526DC462600E51A03 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		7DF3573926DC534F00E51A03 /* RotaryDialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaryDialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +147,11 @@
 		7DF3572E26DC27AB00E51A03 /* RotaryDial */ = {
 			isa = PBXGroup;
 			children = (
+				7DF3573526DC462600E51A03 /* Circle.swift */,
+				7DF3573326DC460000E51A03 /* CircleCollectionViewCell.swift */,
 				7DF3572F26DC2E9500E51A03 /* CircleCollectionViewLayout.swift */,
 				7DF3573126DC303900E51A03 /* CoreGraphicsExtensions.swift */,
-				7DF3573326DC460000E51A03 /* CircleCollectionViewCell.swift */,
-				7DF3573526DC462600E51A03 /* Circle.swift */,
+				7DF3573926DC534F00E51A03 /* RotaryDialView.swift */,
 			);
 			path = RotaryDial;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				7DF3573626DC462600E51A03 /* Circle.swift in Sources */,
 				7DF3573426DC460000E51A03 /* CircleCollectionViewCell.swift in Sources */,
 				7DF3572326DB540600E51A03 /* PhoneNumber.swift in Sources */,
+				7DF3573A26DC534F00E51A03 /* RotaryDialView.swift in Sources */,
 				7DF3571926DAEF8900E51A03 /* RootViewController.swift in Sources */,
 				7DF3573226DC303900E51A03 /* CoreGraphicsExtensions.swift in Sources */,
 			);

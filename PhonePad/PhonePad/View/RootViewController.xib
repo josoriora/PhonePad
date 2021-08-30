@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="PhonePad" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="pdv-PL-Swu" id="nQ1-Hn-f3M"/>
+                <outlet property="rotaryDialView" destination="8QR-cc-qnn" id="9O8-zi-Ptz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,15 +19,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pdv-PL-Swu">
-                    <rect key="frame" x="0.0" y="149.5" width="414" height="628"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewLayout key="collectionViewLayout" id="6PE-kx-MiS" customClass="CircleCollectionViewLayout" customModule="PhonePad" customModuleProvider="target"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="6xv-ev-py4"/>
-                        <outlet property="delegate" destination="-1" id="pnY-aP-ech"/>
-                    </connections>
-                </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQf-VB-oFV">
                     <rect key="frame" x="20" y="797.5" width="374" height="65.5"/>
                     <state key="normal" title="Print Words"/>
@@ -38,20 +29,24 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QR-cc-qnn" customClass="RotaryDialView" customModule="PhonePad" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="149.5" width="414" height="628"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemGray2Color"/>
             <constraints>
-                <constraint firstItem="pdv-PL-Swu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="15A-o1-FXo"/>
+                <constraint firstItem="8QR-cc-qnn" firstAttribute="bottom" secondItem="kQf-VB-oFV" secondAttribute="top" constant="-20" id="2tH-Zd-Dj2"/>
+                <constraint firstItem="8QR-cc-qnn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="89n-52-7YR"/>
                 <constraint firstItem="53O-3m-kya" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="8ua-YP-Qkf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8QR-cc-qnn" secondAttribute="trailing" id="Buk-rr-vGq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kQf-VB-oFV" secondAttribute="trailing" constant="20" id="MVd-Or-AjF"/>
                 <constraint firstItem="kQf-VB-oFV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Oi8-nF-3Yw"/>
                 <constraint firstItem="53O-3m-kya" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="SN3-TX-tMt"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pdv-PL-Swu" secondAttribute="trailing" id="SX7-O3-3bd"/>
                 <constraint firstItem="53O-3m-kya" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.08" id="VmR-9B-7OF"/>
-                <constraint firstItem="pdv-PL-Swu" firstAttribute="top" secondItem="53O-3m-kya" secondAttribute="bottom" constant="20" id="cl1-ij-xGX"/>
+                <constraint firstItem="8QR-cc-qnn" firstAttribute="top" secondItem="53O-3m-kya" secondAttribute="bottom" constant="20" id="eG8-7f-SfY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="53O-3m-kya" secondAttribute="trailing" constant="20" id="myf-f2-0YM"/>
-                <constraint firstItem="pdv-PL-Swu" firstAttribute="bottom" secondItem="kQf-VB-oFV" secondAttribute="top" constant="-20" id="oql-MV-k73"/>
                 <constraint firstItem="kQf-VB-oFV" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.08" id="px2-r2-unz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kQf-VB-oFV" secondAttribute="bottom" constant="-1" id="uTY-mk-Eg3"/>
             </constraints>
