@@ -10,7 +10,7 @@ import UIKit
 protocol RotaryDialDataSource: AnyObject {
     func numberOfDials() -> Int
     
-    func numberAt(indexPath: IndexPath) -> PhoneNumber?
+    func numberAt(indexPath: IndexPath) -> PhoneKeypad?
 }
 
 protocol RotaryDialDelegate: AnyObject {

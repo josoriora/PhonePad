@@ -7,11 +7,7 @@
 
 import Foundation
 
-public protocol LetterCombinationsProtocol {
-    func wordListFrom(numbers: [Int]) -> [String]
-}
-
-public class LetterCombinations: LetterCombinationsProtocol {
+public class LetterCombinations {
     
     let numberMapping = ["", "", "abc", "def", "ghi", "jkl", "mno", "prs", "tuv", "wxy"]
     

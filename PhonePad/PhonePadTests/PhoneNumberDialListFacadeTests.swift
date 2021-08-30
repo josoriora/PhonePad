@@ -19,7 +19,7 @@ class PhoneNumberDialListFacadeTests: XCTestCase {
     }
 
     func testPhoneNumberDialList() {
-        let dialList = PhoneNumberDialListFacade.getList()
+        let dialList = PhoneKeypadListFacade.getList()
         let letters = ["OPERATOR", "", "ABC", "DEF", "GHI", "JKL", "MNO", "PRS", "TUV", "WXY"]
         
         for i in 0..<10 {

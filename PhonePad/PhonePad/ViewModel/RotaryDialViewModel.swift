@@ -8,15 +8,15 @@
 import Foundation
 
 public class RotaryDialViewModel {
-    public let numberList: PhoneNumberDialList.Type
+    public let numberList: PhoneKeypadList.Type
     public let letterCombinations: LetterCombinationsFacadeProtocol.Type
-    public let dialList: [PhoneNumber]
+    public let dialList: [PhoneKeypad]
     public private(set) var numbers = [Int]()
     public var numbersText: String {
         numbers.reduce("") { $0 + String($1) }
     }
     
-    public init(numberList: PhoneNumberDialList.Type = PhoneNumberDialListFacade.self,
+    public init(numberList: PhoneKeypadList.Type = PhoneKeypadListFacade.self,
                 letterCombinations: LetterCombinationsFacadeProtocol.Type = LetterCombinationsFacade.self) {
         self.numberList = numberList
         self.letterCombinations = letterCombinations

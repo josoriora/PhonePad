@@ -34,7 +34,7 @@ extension RootViewController: RotaryDialDataSource {
         return viewModel.dialList.count
     }
     
-    func numberAt(indexPath: IndexPath) -> PhoneNumber? {
+    func numberAt(indexPath: IndexPath) -> PhoneKeypad? {
         return viewModel.dialList[indexPath.row]
     }
 }

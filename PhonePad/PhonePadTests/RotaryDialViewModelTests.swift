@@ -66,14 +66,8 @@ class RotaryDialViewModelTests: XCTestCase {
     }
 }
 
-class PhoneNumberDialListMock: PhoneNumberDialList {
-    static func getList() -> [PhoneNumber] {
-        return [PhoneNumberImpl(number: 2, letters: "abc")]
-    }
-}
-
-class LetterCombinationsMock: LetterCombinationsProtocol {
-    func wordListFrom(numbers: [Int]) -> [String] {
-        return [String]()
+class PhoneNumberDialListMock: PhoneKeypadList {
+    static func getList() -> [PhoneKeypad] {
+        return [PhoneKeypadImpl(number: 2, letters: "abc")]
     }
 }

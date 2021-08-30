@@ -27,7 +27,6 @@ class WordsListViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Words list"
         self.textView.text = text
-        // Do any additional setup after loading the view.
     }
 
 

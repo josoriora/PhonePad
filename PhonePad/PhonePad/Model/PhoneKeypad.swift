@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol PhoneNumber {
+public protocol PhoneKeypad {
     var number: Int { get set }
     var letters: String { get set }
 }

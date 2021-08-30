@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct PhoneNumberImpl: PhoneNumber {
+public struct PhoneKeypadImpl: PhoneKeypad {
     public var number: Int
     
     public var letters: String

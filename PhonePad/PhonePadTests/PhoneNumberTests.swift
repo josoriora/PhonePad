@@ -21,7 +21,7 @@ class PhoneNumberTests: XCTestCase {
     func testNumberInitialization() {
         let number = 0
         let letters = "operator"
-        let phoneNumber: PhoneNumber = PhoneNumberImpl(number: number, letters: letters)
+        let phoneNumber: PhoneKeypad = PhoneKeypadImpl(number: number, letters: letters)
         
         XCTAssertNotNil(phoneNumber)
         XCTAssertEqual(phoneNumber.number, 0)
