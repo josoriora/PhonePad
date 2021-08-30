@@ -50,6 +50,14 @@ class RotaryDialViewModelTests: XCTestCase {
         
         XCTAssertEqual(viewModel.numbersText, "54321")
     }
+    
+    func testViewModelWordsCalculation() {
+        let viewModel = RotaryDialViewModel()
+        let number = 5
+        
+        viewModel.append(number: number)
+        XCTAssertEqual(viewModel.getCurrentWordList(), LetterCombinations().wordListFrom(numbers: [number]))
+    }
 }
 
 class PhoneNumberDialListMock: PhoneNumberDialList {

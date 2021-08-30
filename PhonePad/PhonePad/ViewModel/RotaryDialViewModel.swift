@@ -26,4 +26,8 @@ public class RotaryDialViewModel {
     public func append(number: Int) {
         self.numbers.append(number)
     }
+    
+    public func getCurrentWordList() -> [String] {
+        self.letterCombinations.wordListFrom(numbers: numbers)
+    }
 }

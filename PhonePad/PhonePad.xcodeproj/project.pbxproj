@@ -27,6 +27,8 @@
 		7DF3573A26DC534F00E51A03 /* RotaryDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573926DC534F00E51A03 /* RotaryDialView.swift */; };
 		7DF3573D26DC801800E51A03 /* RotaryDialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573C26DC801800E51A03 /* RotaryDialViewModel.swift */; };
 		7DF3573F26DC842C00E51A03 /* RotaryDialViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573E26DC842C00E51A03 /* RotaryDialViewModelTests.swift */; };
+		7DF3574226DC9D0A00E51A03 /* WordsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3574026DC9D0A00E51A03 /* WordsListViewController.swift */; };
+		7DF3574326DC9D0A00E51A03 /* WordsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF3574126DC9D0A00E51A03 /* WordsListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		7DF3573926DC534F00E51A03 /* RotaryDialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaryDialView.swift; sourceTree = "<group>"; };
 		7DF3573C26DC801800E51A03 /* RotaryDialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaryDialViewModel.swift; sourceTree = "<group>"; };
 		7DF3573E26DC842C00E51A03 /* RotaryDialViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaryDialViewModelTests.swift; sourceTree = "<group>"; };
+		7DF3574026DC9D0A00E51A03 /* WordsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListViewController.swift; sourceTree = "<group>"; };
+		7DF3574126DC9D0A00E51A03 /* WordsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordsListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 			children = (
 				7DF3571726DAEF8900E51A03 /* RootViewController.swift */,
 				7DF3571826DAEF8900E51A03 /* RootViewController.xib */,
+				7DF3574026DC9D0A00E51A03 /* WordsListViewController.swift */,
+				7DF3574126DC9D0A00E51A03 /* WordsListViewController.xib */,
 				7DF3572E26DC27AB00E51A03 /* RotaryDial */,
 			);
 			path = View;
@@ -252,6 +258,7 @@
 			files = (
 				7DF356F426DABB3400E51A03 /* LaunchScreen.storyboard in Resources */,
 				7DF356F126DABB3400E51A03 /* Assets.xcassets in Resources */,
+				7DF3574326DC9D0A00E51A03 /* WordsListViewController.xib in Resources */,
 				7DF3571A26DAEF8900E51A03 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +287,7 @@
 				7DF3573626DC462600E51A03 /* Circle.swift in Sources */,
 				7DF3573426DC460000E51A03 /* CircleCollectionViewCell.swift in Sources */,
 				7DF3572326DB540600E51A03 /* PhoneNumber.swift in Sources */,
+				7DF3574226DC9D0A00E51A03 /* WordsListViewController.swift in Sources */,
 				7DF3573A26DC534F00E51A03 /* RotaryDialView.swift in Sources */,
 				7DF3571926DAEF8900E51A03 /* RootViewController.swift in Sources */,
 				7DF3573226DC303900E51A03 /* CoreGraphicsExtensions.swift in Sources */,
