@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DD6A8A526DD237200E9B31A /* LetterCombinationsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6A8A426DD237200E9B31A /* LetterCombinationsFacade.swift */; };
 		7DF356E826DABB3100E51A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF356E726DABB3100E51A03 /* AppDelegate.swift */; };
 		7DF356EA26DABB3100E51A03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF356E926DABB3100E51A03 /* SceneDelegate.swift */; };
 		7DF356F126DABB3400E51A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF356F026DABB3400E51A03 /* Assets.xcassets */; };
 		7DF356F426DABB3400E51A03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DF356F226DABB3400E51A03 /* LaunchScreen.storyboard */; };
-		7DF356FF26DABB3400E51A03 /* PhonePadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF356FE26DABB3400E51A03 /* PhonePadTests.swift */; };
-		7DF3570A26DABB3400E51A03 /* PhonePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3570926DABB3400E51A03 /* PhonePadUITests.swift */; };
 		7DF3571926DAEF8900E51A03 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3571726DAEF8900E51A03 /* RootViewController.swift */; };
 		7DF3571A26DAEF8900E51A03 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF3571826DAEF8900E51A03 /* RootViewController.xib */; };
+		7DF3571C26DAF44800E51A03 /* LetterCombinationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */; };
+		7DF3571F26DB4B6A00E51A03 /* LetterCombinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3571E26DB4B6A00E51A03 /* LetterCombinations.swift */; };
+		7DF3572126DB4E1F00E51A03 /* PhoneNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572026DB4E1F00E51A03 /* PhoneNumberTests.swift */; };
+		7DF3572326DB540600E51A03 /* PhoneKeypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572226DB540600E51A03 /* PhoneKeypad.swift */; };
+		7DF3572526DB543700E51A03 /* PhoneKeypadImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572426DB543700E51A03 /* PhoneKeypadImpl.swift */; };
+		7DF3572A26DC0A7200E51A03 /* PhoneNumberDialListFacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572926DC0A7200E51A03 /* PhoneNumberDialListFacadeTests.swift */; };
+		7DF3572C26DC0DF800E51A03 /* PhoneKeypadListFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572B26DC0DF800E51A03 /* PhoneKeypadListFacade.swift */; };
+		7DF3573026DC2E9500E51A03 /* CircleCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3572F26DC2E9500E51A03 /* CircleCollectionViewLayout.swift */; };
+		7DF3573226DC303900E51A03 /* CoreGraphicsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573126DC303900E51A03 /* CoreGraphicsExtensions.swift */; };
+		7DF3573426DC460000E51A03 /* CircleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573326DC460000E51A03 /* CircleCollectionViewCell.swift */; };
+		7DF3573626DC462600E51A03 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573526DC462600E51A03 /* Circle.swift */; };
+		7DF3573A26DC534F00E51A03 /* RotaryDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573926DC534F00E51A03 /* RotaryDialView.swift */; };
+		7DF3573D26DC801800E51A03 /* RotaryDialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573C26DC801800E51A03 /* RotaryDialViewModel.swift */; };
+		7DF3573F26DC842C00E51A03 /* RotaryDialViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3573E26DC842C00E51A03 /* RotaryDialViewModelTests.swift */; };
+		7DF3574226DC9D0A00E51A03 /* WordsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3574026DC9D0A00E51A03 /* WordsListViewController.swift */; };
+		7DF3574326DC9D0A00E51A03 /* WordsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DF3574126DC9D0A00E51A03 /* WordsListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +40,10 @@
 			remoteGlobalIDString = 7DF356E326DABB3100E51A03;
 			remoteInfo = PhonePad;
 		};
-		7DF3570626DABB3400E51A03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7DF356DC26DABB3100E51A03 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7DF356E326DABB3100E51A03;
-			remoteInfo = PhonePad;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DD6A8A426DD237200E9B31A /* LetterCombinationsFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinationsFacade.swift; sourceTree = "<group>"; };
 		7DF356E426DABB3100E51A03 /* PhonePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF356E726DABB3100E51A03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DF356E926DABB3100E51A03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,13 +51,25 @@
 		7DF356F326DABB3400E51A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DF356F526DABB3400E51A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DF356FA26DABB3400E51A03 /* PhonePadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonePadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DF356FE26DABB3400E51A03 /* PhonePadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePadTests.swift; sourceTree = "<group>"; };
 		7DF3570026DABB3400E51A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DF3570526DABB3400E51A03 /* PhonePadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonePadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DF3570926DABB3400E51A03 /* PhonePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePadUITests.swift; sourceTree = "<group>"; };
-		7DF3570B26DABB3400E51A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DF3571726DAEF8900E51A03 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		7DF3571826DAEF8900E51A03 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinationsTests.swift; sourceTree = "<group>"; };
+		7DF3571E26DB4B6A00E51A03 /* LetterCombinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinations.swift; sourceTree = "<group>"; };
+		7DF3572026DB4E1F00E51A03 /* PhoneNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTests.swift; sourceTree = "<group>"; };
+		7DF3572226DB540600E51A03 /* PhoneKeypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneKeypad.swift; sourceTree = "<group>"; };
+		7DF3572426DB543700E51A03 /* PhoneKeypadImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneKeypadImpl.swift; sourceTree = "<group>"; };
+		7DF3572926DC0A7200E51A03 /* PhoneNumberDialListFacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberDialListFacadeTests.swift; sourceTree = "<group>"; };
+		7DF3572B26DC0DF800E51A03 /* PhoneKeypadListFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneKeypadListFacade.swift; sourceTree = "<group>"; };
+		7DF3572F26DC2E9500E51A03 /* CircleCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCollectionViewLayout.swift; sourceTree = "<group>"; };
+		7DF3573126DC303900E51A03 /* CoreGraphicsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtensions.swift; sourceTree = "<group>"; };
+		7DF3573326DC460000E51A03 /* CircleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCollectionViewCell.swift; sourceTree = "<group>"; };
+		7DF3573526DC462600E51A03 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		7DF3573926DC534F00E51A03 /* RotaryDialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaryDialView.swift; sourceTree = "<group>"; };
+		7DF3573C26DC801800E51A03 /* RotaryDialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaryDialViewModel.swift; sourceTree = "<group>"; };
+		7DF3573E26DC842C00E51A03 /* RotaryDialViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotaryDialViewModelTests.swift; sourceTree = "<group>"; };
+		7DF3574026DC9D0A00E51A03 /* WordsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListViewController.swift; sourceTree = "<group>"; };
+		7DF3574126DC9D0A00E51A03 /* WordsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordsListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +87,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DF3570226DABB3400E51A03 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +95,6 @@
 			children = (
 				7DF356E626DABB3100E51A03 /* PhonePad */,
 				7DF356FD26DABB3400E51A03 /* PhonePadTests */,
-				7DF3570826DABB3400E51A03 /* PhonePadUITests */,
 				7DF356E526DABB3100E51A03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +104,6 @@
 			children = (
 				7DF356E426DABB3100E51A03 /* PhonePad.app */,
 				7DF356FA26DABB3400E51A03 /* PhonePadTests.xctest */,
-				7DF3570526DABB3400E51A03 /* PhonePadUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +113,9 @@
 			children = (
 				7DF356E726DABB3100E51A03 /* AppDelegate.swift */,
 				7DF356E926DABB3100E51A03 /* SceneDelegate.swift */,
-				7DF3571726DAEF8900E51A03 /* RootViewController.swift */,
-				7DF3571826DAEF8900E51A03 /* RootViewController.xib */,
+				7DF3571D26DB4B4800E51A03 /* Model */,
+				7DF3572D26DC125100E51A03 /* View */,
+				7DF3573B26DC7FAE00E51A03 /* ViewModel */,
 				7DF356F026DABB3400E51A03 /* Assets.xcassets */,
 				7DF356F226DABB3400E51A03 /* LaunchScreen.storyboard */,
 				7DF356F526DABB3400E51A03 /* Info.plist */,
@@ -113,19 +126,57 @@
 		7DF356FD26DABB3400E51A03 /* PhonePadTests */ = {
 			isa = PBXGroup;
 			children = (
-				7DF356FE26DABB3400E51A03 /* PhonePadTests.swift */,
+				7DF3571B26DAF44800E51A03 /* LetterCombinationsTests.swift */,
+				7DF3572026DB4E1F00E51A03 /* PhoneNumberTests.swift */,
+				7DF3572926DC0A7200E51A03 /* PhoneNumberDialListFacadeTests.swift */,
+				7DF3573E26DC842C00E51A03 /* RotaryDialViewModelTests.swift */,
 				7DF3570026DABB3400E51A03 /* Info.plist */,
 			);
 			path = PhonePadTests;
 			sourceTree = "<group>";
 		};
-		7DF3570826DABB3400E51A03 /* PhonePadUITests */ = {
+		7DF3571D26DB4B4800E51A03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7DF3570926DABB3400E51A03 /* PhonePadUITests.swift */,
-				7DF3570B26DABB3400E51A03 /* Info.plist */,
+				7DF3571E26DB4B6A00E51A03 /* LetterCombinations.swift */,
+				7DF3572226DB540600E51A03 /* PhoneKeypad.swift */,
+				7DF3572426DB543700E51A03 /* PhoneKeypadImpl.swift */,
+				7DF3572B26DC0DF800E51A03 /* PhoneKeypadListFacade.swift */,
+				7DD6A8A426DD237200E9B31A /* LetterCombinationsFacade.swift */,
 			);
-			path = PhonePadUITests;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DF3572D26DC125100E51A03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DF3572E26DC27AB00E51A03 /* RotaryDial */,
+				7DF3571726DAEF8900E51A03 /* RootViewController.swift */,
+				7DF3571826DAEF8900E51A03 /* RootViewController.xib */,
+				7DF3574026DC9D0A00E51A03 /* WordsListViewController.swift */,
+				7DF3574126DC9D0A00E51A03 /* WordsListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DF3572E26DC27AB00E51A03 /* RotaryDial */ = {
+			isa = PBXGroup;
+			children = (
+				7DF3573526DC462600E51A03 /* Circle.swift */,
+				7DF3573326DC460000E51A03 /* CircleCollectionViewCell.swift */,
+				7DF3572F26DC2E9500E51A03 /* CircleCollectionViewLayout.swift */,
+				7DF3573126DC303900E51A03 /* CoreGraphicsExtensions.swift */,
+				7DF3573926DC534F00E51A03 /* RotaryDialView.swift */,
+			);
+			path = RotaryDial;
+			sourceTree = "<group>";
+		};
+		7DF3573B26DC7FAE00E51A03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7DF3573C26DC801800E51A03 /* RotaryDialViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +217,6 @@
 			productReference = 7DF356FA26DABB3400E51A03 /* PhonePadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7DF3570426DABB3400E51A03 /* PhonePadUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7DF3571426DABB3400E51A03 /* Build configuration list for PBXNativeTarget "PhonePadUITests" */;
-			buildPhases = (
-				7DF3570126DABB3400E51A03 /* Sources */,
-				7DF3570226DABB3400E51A03 /* Frameworks */,
-				7DF3570326DABB3400E51A03 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DF3570726DABB3400E51A03 /* PBXTargetDependency */,
-			);
-			name = PhonePadUITests;
-			productName = PhonePadUITests;
-			productReference = 7DF3570526DABB3400E51A03 /* PhonePadUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +230,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					7DF356F926DABB3400E51A03 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 7DF356E326DABB3100E51A03;
-					};
-					7DF3570426DABB3400E51A03 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 7DF356E326DABB3100E51A03;
 					};
@@ -221,7 +250,6 @@
 			targets = (
 				7DF356E326DABB3100E51A03 /* PhonePad */,
 				7DF356F926DABB3400E51A03 /* PhonePadTests */,
-				7DF3570426DABB3400E51A03 /* PhonePadUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,18 +261,12 @@
 			files = (
 				7DF356F426DABB3400E51A03 /* LaunchScreen.storyboard in Resources */,
 				7DF356F126DABB3400E51A03 /* Assets.xcassets in Resources */,
+				7DF3574326DC9D0A00E51A03 /* WordsListViewController.xib in Resources */,
 				7DF3571A26DAEF8900E51A03 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7DF356F826DABB3400E51A03 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DF3570326DABB3400E51A03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,8 +281,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF356E826DABB3100E51A03 /* AppDelegate.swift in Sources */,
+				7DD6A8A526DD237200E9B31A /* LetterCombinationsFacade.swift in Sources */,
+				7DF3571F26DB4B6A00E51A03 /* LetterCombinations.swift in Sources */,
 				7DF356EA26DABB3100E51A03 /* SceneDelegate.swift in Sources */,
+				7DF3573D26DC801800E51A03 /* RotaryDialViewModel.swift in Sources */,
+				7DF3572526DB543700E51A03 /* PhoneKeypadImpl.swift in Sources */,
+				7DF3573026DC2E9500E51A03 /* CircleCollectionViewLayout.swift in Sources */,
+				7DF3572C26DC0DF800E51A03 /* PhoneKeypadListFacade.swift in Sources */,
+				7DF3573626DC462600E51A03 /* Circle.swift in Sources */,
+				7DF3573426DC460000E51A03 /* CircleCollectionViewCell.swift in Sources */,
+				7DF3572326DB540600E51A03 /* PhoneKeypad.swift in Sources */,
+				7DF3574226DC9D0A00E51A03 /* WordsListViewController.swift in Sources */,
+				7DF3573A26DC534F00E51A03 /* RotaryDialView.swift in Sources */,
 				7DF3571926DAEF8900E51A03 /* RootViewController.swift in Sources */,
+				7DF3573226DC303900E51A03 /* CoreGraphicsExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DF356FF26DABB3400E51A03 /* PhonePadTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DF3570126DABB3400E51A03 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DF3570A26DABB3400E51A03 /* PhonePadUITests.swift in Sources */,
+				7DF3571C26DAF44800E51A03 /* LetterCombinationsTests.swift in Sources */,
+				7DF3572126DB4E1F00E51A03 /* PhoneNumberTests.swift in Sources */,
+				7DF3572A26DC0A7200E51A03 /* PhoneNumberDialListFacadeTests.swift in Sources */,
+				7DF3573F26DC842C00E51A03 /* RotaryDialViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +316,6 @@
 			isa = PBXTargetDependency;
 			target = 7DF356E326DABB3100E51A03 /* PhonePad */;
 			targetProxy = 7DF356FB26DABB3400E51A03 /* PBXContainerItemProxy */;
-		};
-		7DF3570726DABB3400E51A03 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7DF356E326DABB3100E51A03 /* PhonePad */;
-			targetProxy = 7DF3570626DABB3400E51A03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -501,44 +525,6 @@
 			};
 			name = Release;
 		};
-		7DF3571526DABB3400E51A03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PhonePadUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.julian.PhonePadUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PhonePad;
-			};
-			name = Debug;
-		};
-		7DF3571626DABB3400E51A03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PhonePadUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.julian.PhonePadUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PhonePad;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -565,15 +551,6 @@
 			buildConfigurations = (
 				7DF3571226DABB3400E51A03 /* Debug */,
 				7DF3571326DABB3400E51A03 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7DF3571426DABB3400E51A03 /* Build configuration list for PBXNativeTarget "PhonePadUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DF3571526DABB3400E51A03 /* Debug */,
-				7DF3571626DABB3400E51A03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
