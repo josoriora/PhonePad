@@ -21,10 +21,11 @@ class RootViewController: UIViewController {
     }
     
     @IBAction func onPrintWords(_ sender: Any) {
-        let words = self.viewModel.getCurrentWordList()
-        let wordsListViewController = WordsListViewController(words: words)
-        
-        self.navigationController?.pushViewController(wordsListViewController, animated: true)
+        self.viewModel.getCurrentWordList { [weak self] words in
+            let wordsListViewController = WordsListViewController(words: words)
+            
+            self?.navigationController?.pushViewController(wordsListViewController, animated: true)
+        }
     }
 }
 

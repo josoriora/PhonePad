@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DD6A8A526DD237200E9B31A /* LetterCombinationsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6A8A426DD237200E9B31A /* LetterCombinationsFacade.swift */; };
 		7DF356E826DABB3100E51A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF356E726DABB3100E51A03 /* AppDelegate.swift */; };
 		7DF356EA26DABB3100E51A03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF356E926DABB3100E51A03 /* SceneDelegate.swift */; };
 		7DF356F126DABB3400E51A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF356F026DABB3400E51A03 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DD6A8A426DD237200E9B31A /* LetterCombinationsFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinationsFacade.swift; sourceTree = "<group>"; };
 		7DF356E426DABB3100E51A03 /* PhonePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF356E726DABB3100E51A03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DF356E926DABB3100E51A03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				7DF3572226DB540600E51A03 /* PhoneNumber.swift */,
 				7DF3572426DB543700E51A03 /* PhoneNumberImpl.swift */,
 				7DF3572B26DC0DF800E51A03 /* PhoneNumberDialListFacade.swift */,
+				7DD6A8A426DD237200E9B31A /* LetterCombinationsFacade.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DF356E826DABB3100E51A03 /* AppDelegate.swift in Sources */,
+				7DD6A8A526DD237200E9B31A /* LetterCombinationsFacade.swift in Sources */,
 				7DF3571F26DB4B6A00E51A03 /* LetterCombinations.swift in Sources */,
 				7DF356EA26DABB3100E51A03 /* SceneDelegate.swift in Sources */,
 				7DF3573D26DC801800E51A03 /* RotaryDialViewModel.swift in Sources */,

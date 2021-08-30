@@ -9,7 +9,7 @@ import Foundation
 
 public class RotaryDialViewModel {
     public let numberList: PhoneNumberDialList.Type
-    public let letterCombinations: LetterCombinationsProtocol
+    public let letterCombinations: LetterCombinationsFacadeProtocol.Type
     public let dialList: [PhoneNumber]
     public private(set) var numbers = [Int]()
     public var numbersText: String {
@@ -17,7 +17,7 @@ public class RotaryDialViewModel {
     }
     
     public init(numberList: PhoneNumberDialList.Type = PhoneNumberDialListFacade.self,
-         letterCombinations: LetterCombinationsProtocol = LetterCombinations()) {
+                letterCombinations: LetterCombinationsFacadeProtocol.Type = LetterCombinationsFacade.self) {
         self.numberList = numberList
         self.letterCombinations = letterCombinations
         self.dialList = numberList.getList()
@@ -27,7 +27,7 @@ public class RotaryDialViewModel {
         self.numbers.append(number)
     }
     
-    public func getCurrentWordList() -> [String] {
-        self.letterCombinations.wordListFrom(numbers: numbers)
+    public func getCurrentWordList(completion: @escaping ([String]) -> ()) -> () {
+        self.letterCombinations.wordListFrom(numbers: numbers, completion: completion)
     }
 }

@@ -20,8 +20,7 @@ class RotaryDialViewModelTests: XCTestCase {
     
     func testViewModelInitialization() {
         let numberListProvider = PhoneNumberDialListMock.self
-        let letterCombinations = LetterCombinationsMock()
-        let viewModel = RotaryDialViewModel(numberList: numberListProvider, letterCombinations: letterCombinations)
+        let viewModel = RotaryDialViewModel(numberList: numberListProvider)
         
         XCTAssertNotNil(viewModel)
         XCTAssertEqual(viewModel.numbers.count, 0)
@@ -54,9 +53,16 @@ class RotaryDialViewModelTests: XCTestCase {
     func testViewModelWordsCalculation() {
         let viewModel = RotaryDialViewModel()
         let number = 5
+        let expectation = self.expectation(description: "async")
         
         viewModel.append(number: number)
-        XCTAssertEqual(viewModel.getCurrentWordList(), LetterCombinations().wordListFrom(numbers: [number]))
+        
+        viewModel.getCurrentWordList { words in
+            XCTAssertEqual(words, ["j", "k", "l"])
+            expectation.fulfill()
+        }
+                
+        self.waitForExpectations(timeout: 0.2, handler: nil)
     }
 }
 
