@@ -16,12 +16,11 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Phone Pad"
         rotaryDialView.dataSource = self
+        rotaryDialView.delegate = self
     }
-    
 }
 
 extension RootViewController: RotaryDialDataSource {
-    
     func numberOfDials() -> Int {
         return phoneNumbers.count
     }
@@ -29,5 +28,10 @@ extension RootViewController: RotaryDialDataSource {
     func numberAt(indexPath: IndexPath) -> PhoneNumber? {
         return phoneNumbers[indexPath.row]
     }
-    
+}
+
+extension RootViewController: RotaryDialDelegate {
+    func didSelectDialAt(indexPath: IndexPath) {
+        
+    }
 }

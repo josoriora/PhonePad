@@ -8,21 +8,15 @@
 import UIKit
 
 final class CircleCollectionViewLayout: UICollectionViewLayout {
-    
-    // MARK: Getting the Collection View Information
-    
+           
     override var collectionViewContentSize: CGSize {
         return collectionView?.bounds.size ?? .zero
     }
     
-    // MARK: Invalidating the Layout
-    
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         return true
     }
-    
-    // MARK: Providing Layout Attributes
-    
+       
     private var layoutCircleFrame = CGRect.zero
     private let layoutInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
     private let itemSize = CGSize(width: 100, height: 100)

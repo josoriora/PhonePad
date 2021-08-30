@@ -13,10 +13,15 @@ protocol RotaryDialDataSource: AnyObject {
     func numberAt(indexPath: IndexPath) -> PhoneNumber?
 }
 
+protocol RotaryDialDelegate: AnyObject {
+    func didSelectDialAt(indexPath: IndexPath)
+}
+
 class RotaryDialView: UIView {
     var collectionView: UICollectionView!
     let cellIdentifier = "ItemCell"
     weak var dataSource: RotaryDialDataSource?
+    weak var delegate: RotaryDialDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,7 +29,6 @@ class RotaryDialView: UIView {
         setupView()
     }
     
-    //initWithCode to init view from xib or storyboard
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupView()
@@ -40,6 +44,7 @@ class RotaryDialView: UIView {
         collectionView = UICollectionView(frame: self.bounds, collectionViewLayout: circleCollectionLayout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.backgroundColor = UIColor.yellow
         collectionView.register(CircleCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
         
@@ -76,5 +81,11 @@ extension RotaryDialView: UICollectionViewDataSource {
         cell.backgroundView?.backgroundColor = .blue
         cell.titleLabel.text = String(phoneNumber.number)
         return cell
+    }
+}
+
+extension RotaryDialView: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.didSelectDialAt(indexPath: indexPath)
     }
 }
